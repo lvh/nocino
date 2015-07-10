@@ -48,6 +48,8 @@ mollify djb.
 
 ## Packets
 
+Each packet is wrapped in a netstring.
+
 ### Authenticated ciphertext packet
 
 The contents of the authenticated ciphertext packet are a
