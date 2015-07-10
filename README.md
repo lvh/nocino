@@ -16,8 +16,9 @@ NIST-approved primitives.
 
 This standard provides:
 
-* efficient authenticated encryption, especially for multiple
-  recipients,
+* efficient authenticated encryption,
+* authenticated associated data,
+* efficient support for multiple recipients,
 * efficient asymmetric key rotation without having to re-encrypt,
 * support for large (>64GB) messages (unlike AES-GCM-based
   constructions).
