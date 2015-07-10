@@ -62,14 +62,16 @@ encoding.
 ### RSA encryption key packet
 
 RSA encryption key packets contain the authentication key and the
-encryption key.
+encryption key, encrypted for a specific recipient using that
+recipient's RSA key.
 
 This packet does not have internal netstrings, because it is
 fixed-width (2 * 128 bits).
 
 ### RSA MAC key packet
 
-RSA encryption key packets contain the authentication key.
+RSA encryption key packets contain the authentication key, encrypted
+for a specific recipient using that recipient's RSA key.
 
 This packet does not have internal netstrings, because it is
 fixed-width (1 * 128 bits).
