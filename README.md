@@ -65,11 +65,14 @@ RSA encryption key packets contain the authentication key and the
 encryption key, encrypted for a specific recipient using that
 recipient's RSA key.
 
+The contents are encrypted using OAEP.
 
 ### RSA MAC key packet
 
 RSA encryption key packets contain the authentication key, encrypted
 for a specific recipient using that recipient's RSA key.
 
+The contents are encrypted using OAEP.
 
+[oaep]: http://cseweb.ucsd.edu/~mihir/papers/oae.pdf
 [fernet]: https://github.com/fernet/spec/
