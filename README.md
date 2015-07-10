@@ -53,7 +53,8 @@ Each packet is wrapped in a netstring.
 ### Authenticated ciphertext packet
 
 The contents of the authenticated ciphertext packet are a
-[`fernet`][fernet] message, except without the final base64 encoding.
+[`fernet`][fernet] message, except without the final URL-safe base64
+encoding.
 
 ### Authenticated plaintext packet
 
