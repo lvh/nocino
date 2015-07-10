@@ -41,9 +41,9 @@ It has the following considerations for implementors:
 
 ## Message structure
 
-A message is a URL-safe base64 encoded sequence of bytes, consisting
-of the concatenation of the representations of a sequence of
-*packets*. All packets are [netstrings][netstring], to somewhat
+A message is a [URL-safe base64][base64url] encoded sequence of bytes,
+consisting of the concatenation of the representations of a sequence
+of *packets*. All packets are [netstrings][netstring], to somewhat
 mollify djb.
 
 ## Packets
@@ -75,4 +75,5 @@ for a specific recipient using that recipient's RSA key.
 The contents are encrypted using OAEP.
 
 [oaep]: http://cseweb.ucsd.edu/~mihir/papers/oae.pdf
+[base64url]: http://tools.ietf.org/html/rfc4648#section-5
 [fernet]: https://github.com/fernet/spec/
